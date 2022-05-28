@@ -5,20 +5,25 @@ variable "vpc_cidr" {
 
 variable "azs" {
   type = map(object({
-    public_cidr = string
-    private_cidr = string
+    public_cidr       = string
+    private_cidr      = string
     availability_zone = string
   }))
   default = {
     a = {
-      public_cidr = "172.32.0.0/20"
-      private_cidr = "172.32.48.0/20"
+      public_cidr       = "172.32.0.0/20"
+      private_cidr      = "172.32.48.0/20"
       availability_zone = "ap-northeast-1a"
     }
     c = {
-      public_cidr = "172.32.16.0/20"
-      private_cidr = "172.32.64.0/20"
+      public_cidr       = "172.32.16.0/20"
+      private_cidr      = "172.32.64.0/20"
       availability_zone = "ap-northeast-1c"
     }
   }
+}
+
+variable "single_nat_gateway" {
+  type    = bool
+  default = false
 }
