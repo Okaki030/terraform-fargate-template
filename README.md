@@ -10,8 +10,9 @@ $ terraform init
 
 ## Tips
 ### NATゲートウェイを複数を作成する
-コスト削減のためNATゲートウェイの数を1つにしたい場合は、以下のコマンドでapplyする。
+デフォルトではコスト削減のためNATゲートウェイとEIPの数を1つに制限している。
+各アベイラビリティゾーンごとに作成したい場合は、以下のコマンドを入力する。
 
 ```
-terraform-fargate-template/network/main $ terraform apply -var='single_nat_gateway=true'
+terraform-fargate-template/network/main $ terraform apply -var='single_nat_gateway=false'
 ```

@@ -25,5 +25,5 @@ variable "azs" {
 
 variable "single_nat_gateway" {
   type    = bool
-  default = false
+  default = true
 }
