@@ -1,3 +1,3 @@
 locals {
-    system_name = "template"
+  system_name = "template"
 }
