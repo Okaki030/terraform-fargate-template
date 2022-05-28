@@ -1,5 +1,9 @@
 resource "aws_ecr_repository" "app" {
-  name = "template-app"
+  name   = "${local.system_name}-app"
+
+  tags = {
+      Name = "${local.system_name}-app"
+  }
 }
 
 # 
