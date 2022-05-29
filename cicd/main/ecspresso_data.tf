@@ -22,6 +22,10 @@ data "aws_ecr_repository" "app" {
   name   = "${local.system_name}-app"
 }
 
+data "aws_iam_role" "ecs_task" {
+  name = "${local.system_name}-ecs-task"
+}
+
 data "aws_iam_role" "ecs_task_execution" {
    name = "${local.system_name}-ecs-task-execution"
 }
