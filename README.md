@@ -1,5 +1,7 @@
 # terraform-fargate-template
 
+![ecs](https://user-images.githubusercontent.com/36916494/170874309-649d2534-fa5f-41eb-96db-c40babfd9e77.png)
+
 ## 使い方
 
 整備中
