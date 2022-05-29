@@ -1,4 +1,4 @@
-resource "aws_lb_target_group" "app" {
+resource "aws_lb_target_group" "this" {
   name = "${local.system_name}-app"
 
   deregistration_delay = 60
