@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "this" {
-  name = "okaki030.work"
+  name = local.domain_name
 }
 
 resource "aws_route53_record" "certificate_validation" {
